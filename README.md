@@ -2,6 +2,6 @@
 
 | `wiki`
 | :--------
-| [Folder Struct][spotify]
+| [Folder Struct][folder-struct]
 
-[spotify]: https://github.com/trungk18/angular-spotify
+[folder-struct]: folder-struct.md
