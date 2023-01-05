@@ -29,8 +29,8 @@ Bao gồm các class đóng gói data để `chuyển giữa client - server`. M
 
   [controlers-reference]: https://laravel.com/docs/9.x/structure#the-http-directory
 
-  📌 Lưu ý
-  `1. Controllers phải đặt tên theo số nhiều.`\
+  📌 Lưu ý\
+   `1. Controllers phải đặt tên theo số nhiều.`\
    `2. Cố gắng giữ cho bộ điều khiển đơn
 giản và bám vào các từ khóa CRUD mặc định(index, create, store, show, edit,
 update, destroy).`
