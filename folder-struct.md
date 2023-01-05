@@ -66,3 +66,8 @@ Nơi chứa các business logic code, có thể xem đó là nơi luân chuyển
 
 Nơi chứa các class, functions, constants,... sẽ được `sử dụng lại trong toàn bộ chương trình`\
 ![App folder struct](assets/folder-struct-shared.PNG)
+
+## routes Folder Struct
+
+![routes folder struct](assets/folder-struct-routes.PNG)\
+📌 Lưu ý: `Chia routes tương ứng theo controller tạo ra`
