@@ -54,7 +54,8 @@ update, destroy).`
 
 ### Repositories
 
-Bao gồm các class đảm nhiệm giao tiếp với DB thông qua model sau đó đưa dữ liệu lên cho service xử lí
+Lớp này giao tiếp với DB thông qua model, có thể coi là `cầu nối giữa DB - Serivce`.
+Mục đích tạo ra lớp này để cách ly với việc tiếp cận data sao cho những thay đổi không ảnh hưởng trực tiếp đến lớp logic business.
 ![App folder struct](assets/mvc-struct.PNG)
 
 ### Services
@@ -63,5 +64,5 @@ Nơi chứa các business logic code, có thể xem đó là nơi luân chuyển
 
 ### Shared
 
+Nơi chứa các class, functions, constants,... sẽ được `sử dụng lại trong toàn bộ chương trình`
 ![App folder struct](assets/folder-struct-shared.PNG)
-Nơi chứa các class, functions, constants,... sẽ được xử dụng lại trong toàn bộ chương trình
