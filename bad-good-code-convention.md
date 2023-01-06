@@ -270,3 +270,42 @@ if (! $conditionB) {
 
 // condition A and B passed
 ```
+
+## Thứ tự import thư viện trong file code
+
+Import các file ở trong project trước sau đó mới đến các thư viện khác của laravel hay các thư viện bên ngoài. Sử dụng 1 line để ngăn cách ra.
+
+Bad:
+
+```php
+
+<?php
+
+namespace App\DTOs\Api;
+
+use App\Shared\Constants\Message\ValidationMessage;
+use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Exceptions\HttpResponseException;
+use App\Shared\Traits\ApiResponseTrait;
+use Illuminate\Contracts\Validation\Validator;
+
+// ... your code here
+```
+
+Good:
+
+```php
+
+<?php
+
+namespace App\DTOs\Api;
+
+use App\Shared\Constants\Message\ValidationMessage;
+use App\Shared\Traits\ApiResponseTrait;
+
+use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Exceptions\HttpResponseException;
+use Illuminate\Contracts\Validation\Validator;
+
+// ... your code here
+```

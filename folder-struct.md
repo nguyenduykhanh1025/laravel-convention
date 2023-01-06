@@ -69,5 +69,5 @@ Nơi chứa các class, functions, constants,... sẽ được `sử dụng lạ
 
 ## routes Folder Struct
 
-📌 Lưu ý: `Chia routes tương ứng theo controller tạo ra`
-![Routes folder struct](assets/folder-struct-routes.PNG)\
+📌 Lưu ý: `Chia routes tương ứng theo controller tạo ra`\
+![Routes folder struct](assets/folder-struct-routes.PNG)
