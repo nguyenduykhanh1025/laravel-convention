@@ -60,7 +60,7 @@ Mục đích tạo ra lớp này để cách ly với việc tiếp cận data s
 
 ### Services
 
-Nơi chứa các business logic code, có thể xem đó là nơi luân chuyển giữ liệu giữa `controler - repository`
+Nơi chứa các business logic code, có thể xem đó là nơi luân chuyển giữa liệu giữa `controler - repository`
 
 ### Shared
 
@@ -69,5 +69,5 @@ Nơi chứa các class, functions, constants,... sẽ được `sử dụng lạ
 
 ## routes Folder Struct
 
-![routes folder struct](assets/folder-struct-routes.PNG)\
 📌 Lưu ý: `Chia routes tương ứng theo controller tạo ra`
+![Routes folder struct](assets/folder-struct-routes.PNG)\
