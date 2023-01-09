@@ -309,3 +309,28 @@ use Illuminate\Contracts\Validation\Validator;
 
 // ... your code here
 ```
+
+## Ưu tiên sử dụng Eloquent hơn là Query Builder and raw SQL queries
+
+Bad:
+
+```php
+SELECT *
+FROM `articles`
+WHERE EXISTS (SELECT *
+              FROM `users`
+              WHERE `articles`.`user_id` = `users`.`id`
+              AND EXISTS (SELECT *
+                          FROM `profiles`
+                          WHERE `profiles`.`user_id` = `users`.`id`)
+              AND `users`.`deleted_at` IS NULL)
+AND `verified` = '1'
+AND `active` = '1'
+ORDER BY `created_at` DESC
+```
+
+Good:
+
+```php
+Article::has('user.profile')->verified()->latest()->get();
+```
