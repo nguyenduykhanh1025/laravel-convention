@@ -19,7 +19,7 @@ php -i
 
 4. Move the downloaded file to the /ext folder. This is the folder where PHP keeps all of its extensions and can be found under the folder where you have installed PHP. On mine, it is located in C:\PHP\ext.
    ![xdebug-move-file](assets/xdebug-move-file.PNG)
-5. Open php.ini file in an editor like Notepad, Notepad++ or Visual Code. This file is located within the folder where you installed PHP, C:\PHP\php.ini for me.
+5. Open php.ini file in an editor like Notepad, Notepad++ or Visual Code. This file is located within the folder where you installed PHP, C:\PHP\php.ini for me.\
    ![xdebug-php-init](assets/xdebug-php-init.PNG)
 6. Check if Xdebug has been installed by running the following command in a terminal
 
