@@ -36,3 +36,9 @@ php artisan test --coverage
 ```
 
 ![php-run-unit-test](assets/php-run-unit-test.PNG)
+
+Coverage Reports
+
+```php
+php artisan test  --coverage-html coverage
+```
