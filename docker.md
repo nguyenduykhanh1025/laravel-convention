@@ -44,7 +44,7 @@ docker rmi -f `docker images -qa `
 
 # Remove all volumes
 
-docker volume rm $(docker volume ls -qf)
+docker volume rm $(docker volume ls -q)
 
 # Remove all networks
 
