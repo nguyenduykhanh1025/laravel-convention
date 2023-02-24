@@ -30,36 +30,44 @@ docker exec -it [container-id] php artisan migrate --seed
 docker-compose down
 ```
 
-# Stop all containers
+6 Stop all containers
 
+```php
 docker stop `docker ps -qa`
+```
 
-# Remove all containers
+7 Remove all containers
 
+```php
 docker rm `docker ps -qa`
+```
 
-# Remove all images
+8 Remove all images
 
-docker rmi -f `docker images -qa `
+```php
+docker rmi -f `docker images -qa
+```
 
-# Remove all volumes
+9 Remove all volumes
 
+```php
 docker volume rm $(docker volume ls -q)
+```
 
-# Remove all networks
+10 Remove all networks
 
+```php
 docker network rm `docker network ls -q`
+```
 
-# Your installation should now be all fresh and clean.
+11. List images
 
-# The following commands should not output any items:
+```php
+docker images -a
+```
 
-# docker ps -a
+12. List volumes
 
-# docker images -a
-
-# docker volume ls
-
-# The following command show only show the default networks:
-
-# docker network ls
+```php
+docker volume ls
+```
