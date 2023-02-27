@@ -45,7 +45,7 @@ docker rm `docker ps -qa`
 8 Remove all images
 
 ```php
-docker rmi -f `docker images -qa
+docker rmi -f $(docker images -aq)
 ```
 
 9 Remove all volumes
