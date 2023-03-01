@@ -19,3 +19,25 @@ SET global general_log = 1;
 SET global log_output = 'table';
 select * from mysql.general_log;
 ```
+
+### Grant role
+
+1. Grant table role
+
+```php
+GRANT ALL PRIVILEGES ON [table-name].* TO '[username]'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+```
+
+2. Grant all role for root user
+
+```php
+GRANT ALL PRIVILEGES ON . TO root@'%';
+FLUSH PRIVILEGES;
+```
+
+### Create user for grant
+
+```php
+GRANT ALL PRIVILEGES ON *.* TO 'daniel'@'10.10.10.10' WITH GRANT OPTION;
+```
