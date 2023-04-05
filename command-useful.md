@@ -19,5 +19,5 @@ php artisan clear-compiled
 unrar in linux:
 
 ```php
-unrar x painfree2go.rar
+unrar x name.rar
 ```
