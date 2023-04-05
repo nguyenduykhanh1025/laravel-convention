@@ -15,3 +15,9 @@ php artisan route:clear
 php artisan cache:clear
 php artisan clear-compiled
 ```
+
+unrar in linux:
+
+```php
+unrar x painfree2go.rar
+```
