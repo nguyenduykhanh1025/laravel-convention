@@ -1,4 +1,4 @@
-# Laravel Convention 2
+# Laravel Convention
 
 | `wiki`
 | :--------
